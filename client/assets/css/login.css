@@ -1,0 +1,54 @@
+/* 版心 */
+
+.heart {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/loginback.jpg);
+    background-size: 100% 100%;
+}
+
+.login {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 80%;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.login p {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.login>form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+input {
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(243, 243, 243);
+}
+
+.loginson {
+    height: 35px;
+    margin-top: 12px;
+}
+
+.loginStyle {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    background-color: skyblue;
+}
+
+.loginStyle>a {
+    color: white;
+}
