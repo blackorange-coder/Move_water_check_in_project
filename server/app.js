@@ -52,14 +52,8 @@ const userinfoRouter = require('./router/userinfo');
 app.use('/my', userinfoRouter);
 
 
-// 三、有关文章的路由模块
-const articleListRouter = require('./router/article');
-app.use('/api/article', articleListRouter);
-app.use('/my', articleListRouter);
 
-// 四、挂载时间路由
-const timeRouter = require('./router/web_time');
-app.use('/api', timeRouter);
+
 
 
 

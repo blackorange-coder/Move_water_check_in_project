@@ -74,7 +74,7 @@ window.addEventListener('load', function() {
             var oldtime = res.message.date; //后端返回的上次签到时间
             console.log("oldtime=" + oldtime);
             //调用避免重复点击函数
-            avoidRepeatedClicks(oldtime, "您已经搬过水了");
+            // avoidRepeatedClicks(oldtime, "您已经搬过水了");
         }
     })
 
@@ -89,9 +89,7 @@ window.addEventListener('load', function() {
         var click_btn = document.querySelector('.click_btn');
         click_btn.addEventListener('click', function(e) {
             e.preventDefault();
-            // localStorage.removeItem('token');
             alert('滴！勤劳卡！勤劳的人，迎娶富婆');
-            // location.href = '../login.html';
             $.ajax({
                 method: 'GET',
                 url: '/my/add',
@@ -143,8 +141,8 @@ window.addEventListener('load', function() {
         console.log("timeCompare=" + timeCompare);
         console.log("timeCompare=" + parseInt(timeCompare / 1000 / 60) + "min");
         var click_btn = document.querySelector('.click_btn');
-        var astrictTime = 1000 * 60 * 60 * 24 * 1; //*后面是天数
-        if (parseInt(timeCompare / 1000 / 60) < 70) {
+        var astrictTime = 1000 * 60 * 60 * 24 * 5; //*后面是天数
+        if (timeCompare < astrictTime) {
             click_btn.disabled = "true";
             alert(msg);
         }
