@@ -6,10 +6,10 @@ $.ajaxPrefilter(function(options) {
         console.log(options.url);
 
     } else {
-        options.url = 'http://127.0.0.1:3008' + options.url;
+        options.url = 'http://www.itchengzi.top:3008' + options.url;
         console.log(options.url);
 
-        // options.url = 'http://300e1cbd.cpolar.io' + options.url;
+    
     }
 
 
